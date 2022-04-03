@@ -1,0 +1,11 @@
+mutation CreateEventType(
+  $title: String!
+  $description: String!
+  $length: Int!
+) {
+  createEventType(
+    input: { title: $title, description: $description, length: $length }
+  ) {
+    ...EventType
+  }
+}

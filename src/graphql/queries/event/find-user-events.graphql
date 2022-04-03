@@ -1,0 +1,13 @@
+query FindUserEvents {
+  findUserEvents {
+    id
+    date
+    time
+    additionalNotes
+    Atendee {
+      id
+      name
+      email
+    }
+  }
+}

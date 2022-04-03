@@ -1,0 +1,8 @@
+fragment EventType on EventType {
+  id
+  title
+  length
+  description
+  createdAt
+  updatedAt
+}

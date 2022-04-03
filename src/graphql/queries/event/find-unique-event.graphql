@@ -1,0 +1,13 @@
+query FindUniqueEvent($eventId: Float!) {
+  findUniqueEvent(eventId: $eventId) {
+    id
+    date
+    time
+    additionalNotes
+    Atendee {
+      id
+      name
+      email
+    }
+  }
+}

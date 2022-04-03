@@ -1,0 +1,22 @@
+mutation createEvent(
+  $date: DateTime!
+  $time: DateTime!
+  $additionalNotes: String
+  $attendeeName: String!
+  $attendeeEmail: String!
+) {
+  createEvent(
+    input: {
+      date: $date
+      time: $time
+      additionalNotes: $additionalNotes
+      attendeeName: $attendeeName
+      attendeeEmail: $attendeeEmail
+    }
+  ) {
+    id
+    date
+    time
+    additionalNotes
+  }
+}
